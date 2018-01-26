@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Static assets build system using webpack",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack -- progress --hot",
+    "dev": "cross-env NODE_ENV=development webpack --progress --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
@@ -23,7 +23,11 @@
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.11.1"
+    "webpack-dev-server": "^2.11.1",
+    "extract-text-webpack-plugin":"^3.0.2",
+    "postcss-loader": "^2.0.10",
+    "autoprefixer": "^7.2.5",
+    "postcss-scss":"^1.0.3"
   },
   "author": "Bogdan Kustan",
   "license": "MIT"
